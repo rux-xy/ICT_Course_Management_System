@@ -1,69 +1,53 @@
-# React + TypeScript + Vite
+# 📚 ICT Course Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based system designed to manage ICT courses, students, and resources efficiently.  
+This project is built with **React + Vite** and styled using **Tailwind CSS** and **ShadCN/UI**.  
+It integrates **Firebase Authentication** for user login, **Firestore** for data storage, and includes modern form handling with **React Hook Form + Zod**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 **User Authentication** (Firebase Authentication)
+- 📁 **Course Management** (add, update, delete, view ICT courses)
+- 👥 **Student Enrollment** (enroll students into courses, manage records)
+- 📝 **Form Handling & Validation** (React Hook Form + Zod)
+- 🖼️ **Image Uploading** (e.g., course images, student profile pictures)
+- 🌐 **API Requests** (via Axios for external integrations)
+- ⚡ **Modern UI** with Tailwind CSS + ShadCN components
+- 📖 **Routing & Navigation** using React Router DOM
+- 🔥 **Real-time Data** from Firestore
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Frontend:** React (Vite)
+- **Styling:** Tailwind CSS, ShadCN/UI
+- **Forms & Validation:** React Hook Form, Zod
+- **Routing:** React Router DOM
+- **State Management:** React Hooks
+- **Backend / Database:** Firebase Firestore
+- **Authentication:** Firebase Authentication
+- **API Calls:** Axios
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📂 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ICT_Course_Management_System/
+│── public/ # Static assets
+│── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Application pages (Dashboard, Courses, Students, etc.)
+│ ├── hooks/ # Custom React hooks
+│ ├── utils/ # Helper functions (validation, API calls)
+│ ├── services/ # Firebase & API integration
+│ ├── App.jsx # Main App component
+│ ├── main.jsx # Entry point
+│ └── index.css # Tailwind CSS imports
+│── .gitignore
+│── package.json
+│── tailwind.config.js
+│── postcss.config.js
+│── README.md
