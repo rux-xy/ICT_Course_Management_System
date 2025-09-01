@@ -51,3 +51,7 @@ ICT_Course_Management_System/
 │── tailwind.config.js
 │── postcss.config.js
 │── README.md
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
