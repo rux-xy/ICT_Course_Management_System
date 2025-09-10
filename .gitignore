@@ -29,3 +29,6 @@ dist-ssr
 .env.development
 .env.test
 .env.production
+
+# Firebase config
+src/firebase.js
